@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Budget App</title>
+    <!-- linking css to html -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- whole container -->
+    <div class="container">
+        <!-- first row -->
+        <div class="row row1">
+
+            <div class="budget">
+                <h1>Budget</h1>
+                <input type="text" placeholder="Enter Budget" id="budget">
+                <button onclick="setBudget()">Set Budget</button>
+            </div>
+
+            <div class="expense">
+                <h1>Expenses</h1>
+                <input type="text" placeholder="Enter Title Of Product" id="titleInp">
+                <input type="text" placeholder="Enter Cost Of The Post" id="costInp">
+                <button onclick="add()">Check Amount</button>
+            </div>
+
+        </div>
+
+        <!-- second row -->
+
+        <div class="row row2">
+            <div class="row2-cover" id="stats">
+                <div class="total">
+                    <h2>Total Budget</h2>
+                    <p id="budgetPlace"></p>
+                </div>
+
+                <div class="expenses">
+                    <h2>Expenses</h2>
+                    <p id="e"></p>
+                </div>
+
+                <div class="balance">
+                    <h2>Balance</h2>
+                    <p id="b"></p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- third row -->
+
+        <div class="row row3">
+            <div class="expense-list" id="eL">
+                <h1>Expense List</h1>
+                
+
+            </div>
+
+        </div>
+        <button class="showStats" onclick="show()"><span id="text">Show</span> Stats</button>
+        <script src="script.js"></script>
+</body>
+
+</html>
